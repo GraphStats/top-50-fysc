@@ -3330,7 +3330,7 @@ function restartFadeInMove() {
     document.querySelectorAll('.card').forEach((card, index) => {
         card.style.animation = 'none'; // Désactive l'animation actuelle
         void card.offsetHeight; // Force un reflow (hack pour que le navigateur réapplique l'animation)
-        card.style.animation = `fadeInMove 5s ease-out forwards ${index * 0.1}s`; // Réapplique avec délai progressif
+        card.style.animation = `fadeInMove 4s ease-out forwards ${index * 0.07}s`; // Réapplique avec délai progressif
     });
 }
 
